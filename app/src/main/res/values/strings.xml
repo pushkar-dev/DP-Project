@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">DP_Project</string>
+    <string name="time">Time</string>
+
+    <string-array name="Days">
+        <item>Select Day</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <string-array name="Slot">
+        <item>Select Slot</item>
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+    </string-array>
+
+    <string name="button">Button</string>
+    <string name="textview">Set Time Table</string>
+    <string name="topveiwHeader">TimeTable</string>
+    <string name="topM">Morning</string>
+    <string name="topM_time">8:00</string>
+    <string name="topA">Afternoon</string>
+    <string name="topA_time">13:00</string>
+    <string name="topE">Evening</string>
+    <string name="topE_time">20:00</string>
+    <string name="thuLabel">THU</string>
+    <string name="friLabel">FRI</string>
+    <string name="satLabel">SAT</string>
+    <string name="sunLabel">SUN</string>
+    <string name="tueLabel">TUE</string>
+    <string name="wedLabel">WED</string>
+    <string name="monLabel">mon</string>
+    <string name="syncLabel">Sync</string>
+    <string name="deafultLabel">Default</string>
+    <string name="set">SET</string>
+    <string name="view">View</string>
+    <string name="_8_00">8:00</string>
+    <string name="done">Done</string>
+    <string name="daySelectText">Select day</string>
+    <string name="slotSelectText">Select slot</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="wrongSelectAlert">Wrong Time Selected</string>
+    <string name="wrongSelectMsg">Kindly Select Correct Time</string>
+    <string name="time_table">Time Table</string>
+    <string name="day">Day</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="_8_00_am">8:00 AM</string>
+    <string name="_2_00_pm">2:00 PM</string>
+    <string name="_7_00_pm">7:00 PM</string>
+    <string name="disconnected">"Disconnected"</string>
+    <string name="connected">"Connected"</string>
+    <string name="device">Device :</string>
+</resources>
