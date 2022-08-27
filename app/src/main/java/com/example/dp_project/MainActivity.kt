@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val itemAdapter=Adapters(this.applicationContext, this)
         val alarmSetter= itemAdapter.alarmSetter
+        var isConnected=false
 
         // init the drop down menus
         val daySelect= findViewById<View>(R.id.dayEntry) as Spinner
@@ -70,11 +71,11 @@ class MainActivity : AppCompatActivity() {
         val handler=Handler(Looper.getMainLooper())
         fun statusUpdater()
         {
-            var isConnected=false
             Thread{
                 val status = Connectivity.ping(alarmSetter.hostUrl)
                 isConnected=(status=="Ready")
             }.start()
+            println(isConnected)
             if(isConnected)
             {
                 statusText.text=getString(R.string.connected)

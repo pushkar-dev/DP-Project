@@ -11,7 +11,7 @@ public class Connectivity {
 
         OkHttpClient client = new OkHttpClient();
 
-        String get_req=url_esp32+"?"+id+"="+data;
+        String get_req=url_esp32+"get?"+id+"="+data;
 
         Request request = new Request.Builder()
                 .url(get_req)
