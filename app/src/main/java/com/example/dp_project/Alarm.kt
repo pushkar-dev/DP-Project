@@ -10,7 +10,7 @@ class Alarm(private var ctx: Context, private val filename: String = "alarmDump.
     private val clock:AlarmClock = AlarmClock()
     var timeTable: Array<IntArray> =Array(7){IntArray(3)}
     private var timeTableDefault: Array<IntArray> =Array(7){IntArray(3)}
-    val hostUrl="http://192.168.43.205/"
+    var hostUrl="http://192.168.43.205/"
 
     private val dayOfWeek: Array<String> =arrayOf("mon","tue","wed","thu","fri","sat","sun")
 

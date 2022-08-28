@@ -9,6 +9,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.annotation.RequiresApi
@@ -69,13 +70,18 @@ class MainActivity : AppCompatActivity() {
         //status text
         val statusText=findViewById<View>(R.id.statusText) as TextView
         val handler=Handler(Looper.getMainLooper())
+        val ipText=findViewById<View>(R.id.editTextDeviceIP) as EditText
         fun statusUpdater()
         {
             Thread{
+                val h=ipText.text.toString()
+                alarmSetter.hostUrl="http://$h/"
                 val status = Connectivity.ping(alarmSetter.hostUrl)
                 isConnected=(status=="Ready")
+                println(isConnected)
+
             }.start()
-            println(isConnected)
+            Thread.sleep(1000)
             if(isConnected)
             {
                 statusText.text=getString(R.string.connected)
